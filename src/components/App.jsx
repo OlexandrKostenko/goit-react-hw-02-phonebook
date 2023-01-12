@@ -51,7 +51,7 @@ export class App extends Component {
             value={name}
             onChange={this.handleChange} />
         </label>
-        <button>Add contact</button>
+        <button type="submit">Add contact</button>
       </form>
 
       <div>
