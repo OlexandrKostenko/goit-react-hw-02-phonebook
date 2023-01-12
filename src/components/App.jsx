@@ -20,7 +20,7 @@ export class App extends Component {
     event.preventDefault();
     const {name} = this.state;
     this.setState(prevState => ({
-      contacts : [ {name}, ... prevState.contacts]
+      contacts : [ {name}, ...prevState.contacts]
     }))
     this.reset();
   }
