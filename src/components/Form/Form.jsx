@@ -2,7 +2,7 @@ import { Component } from "react";
 import PropTypes from 'prop-types';
 import { Label, SubmitButton, FormWrapper, Input } from "./Form.styled";
 
-export class Form1 extends Component {
+export class Form extends Component {
     state = {
         name: '',
         number: '',
@@ -55,6 +55,6 @@ export class Form1 extends Component {
       </FormWrapper>
     )}};
 
-Form1.propTypes = {
+Form.propTypes = {
     onSubmit: PropTypes.func.isRequired,
 };
