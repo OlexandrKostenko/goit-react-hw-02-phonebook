@@ -3,7 +3,6 @@ import { nanoid } from 'nanoid';
 import { Form } from "./Form/Form";
 import { ContactsList } from "./ContactsList/ContactsList";
 import { Filter } from "./Filter/Filter";
-import { element } from "prop-types";
 import { Wrapper } from "./App.styled";
 
 
