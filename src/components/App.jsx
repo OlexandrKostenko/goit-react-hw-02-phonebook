@@ -1,9 +1,10 @@
 import { Component } from "react";
 import { nanoid } from 'nanoid';
-import { Form } from "./Form/form";
+import { Form } from "./Form/Form";
 import { ContactsList } from "./ContactsList/ContactsList";
 import { Filter } from "./Filter/Filter";
 import { element } from "prop-types";
+import { Wrapper } from "./App.styled";
 
 
 export class App extends Component {
@@ -58,24 +59,15 @@ export class App extends Component {
     const {id, name, contacts, number, filter} = this.state;
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      <h2>Phonebook</h2>
+    <Wrapper>
+      <h1>Phonebook</h1>
       <Form onSubmit={this.addNewContact}></Form>
 
       <h2>Contacts</h2>
       <Filter value={filter} onChange={this.changeFilter}/>
 
       <ContactsList contacts={this.filteredContacts()} handleDelete={this.handleDelete}/>
-    </div>
+    </Wrapper>
   )}
 
 };
