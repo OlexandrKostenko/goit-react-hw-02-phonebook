@@ -55,7 +55,7 @@ export class App extends Component {
   };
 
   render () {
-    const {id, name, contacts, number, filter} = this.state;
+    const { filter } = this.state;
 
   return (
     <Wrapper>
