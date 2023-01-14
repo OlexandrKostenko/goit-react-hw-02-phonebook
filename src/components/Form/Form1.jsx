@@ -2,7 +2,7 @@ import { Component } from "react";
 import PropTypes from 'prop-types';
 import { Label, SubmitButton, FormWrapper, Input } from "./Form.styled";
 
-export class Form extends Component {
+export class Form1 extends Component {
     state = {
         name: '',
         number: '',
