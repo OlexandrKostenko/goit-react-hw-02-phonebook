@@ -55,6 +55,6 @@ export class Form1 extends Component {
       </FormWrapper>
     )}};
 
-Form.propTypes = {
+Form1.propTypes = {
     onSubmit: PropTypes.func.isRequired,
 };
