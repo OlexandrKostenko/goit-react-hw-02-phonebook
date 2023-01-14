@@ -20,7 +20,7 @@ export class App extends Component {
   addNewContact = data => {
     if (this.checkContact(data.name)) {
       return alert(`${data.name} is already in contacts`)
-    }
+    };
 
     this.setState(({contacts}) => {
       return {
